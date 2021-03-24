@@ -25,6 +25,10 @@ h3 {
 	font-size: 1.25em;
 }
 
+img {
+	max-width: 100%;
+}
+
 footer { 
 	text-align: center;
 }
@@ -69,6 +73,7 @@ nav a:hover {
 	display: grid; 
 	grid-template-columns: repeat(12, 1fr);
 	grid-gap: 10px;
+	background-color: #ffffff;
 }
 
 header {
@@ -97,19 +102,11 @@ footer {
 	grid-column: 1 / span 12;
 }
 
-.work_section1 {
-	grid-column: 1 / span 4;
-	text-align: center;
-}
-
-.work_section2 {
-	grid-column: 5 / span 4;
-	text-align: center;
-}
-
-.work_section3 {
-	grid-column: 9 / span 4;
-	text-align: center;
+.work_section {
+	grid-column: 1 / span 12;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 
 /* Contact */
@@ -119,5 +116,38 @@ footer {
 
 .contact_aside {
 	grid-column: 5 / span 8;
+}
+
+/* Elements */
+.btn {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+	background-color: cadetblue;
+	font-size: 1rem;
+	padding: 0.5em 1.5em;
+	border-radius: 5px;
+	transition: background-color 250ms;
+}
+
+.btn:hover {
+	background-color: #525252;
+}
+
+.card {
+	text-align: center;
+	margin: 1em;
+	padding-bottom: 2em;
+	box-shadow: #525252 0px 0px 5px;
+	max-width: 27.5%;
+}
+
+.card_title {
+	margin: 0.5em 0 0 0;
+}
+
+.card_text {
+	padding: 0 2em 0.5em;
 }
 
